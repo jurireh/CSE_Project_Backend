@@ -1,8 +1,24 @@
 POST http://localhost:3000/test/
-
 Content-Type: application/json
 
 {
    "owner": "HAllo",
    "name": "huhu"
 }
+
+###
+
+POST http://localhost:3000/marker/
+Content-Type: application/json
+
+{
+    "latitude": "40.992545271822074",
+    "longitude":"29.0289932026238",
+    "name":"Komagene",
+    "description": "Cig Köfte wuhu ",
+    "label": "vegetarian"
+}
+
+###
+
+GET http://localhost:3000/markers/
