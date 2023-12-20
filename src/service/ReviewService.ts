@@ -4,6 +4,7 @@ type reviewRessource = {
     markerId: string,
     title: string,
     description: string,
+    rating: number
 }
 
 export async function getReview(id:string) {
@@ -15,7 +16,8 @@ export async function getReview(id:string) {
         id: review._id.toString(),
         markerid: review.markerId,
         title: review.title,
-        desciption: review.description
+        desciption: review.description,
+        rating: review.rating
     }
 }
 
@@ -31,7 +33,8 @@ export async function getAllReviews(id: string) {
             id: x._id.toString(),
             markerId: x.markerId,
             title: x.title,
-            description: x.description
+            description: x.description,
+            rating:x.rating
         };
         reviewsRes.push(review);
     }
