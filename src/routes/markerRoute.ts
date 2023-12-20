@@ -3,7 +3,7 @@ import { createMarker } from "../service/MarkerService";
 
 const markerRouter = express.Router();
 
-markerRouter.get("/",
+markerRouter.post("/",
 async(req,res,next)=>{
     try{
         await createMarker(req.body)

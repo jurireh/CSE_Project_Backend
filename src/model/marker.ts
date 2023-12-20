@@ -14,6 +14,6 @@ const MarkerSchema = new Schema<IMarker>({
     name: {type: String, required: true},
     description: {type: String, required: true},
     label: {type: String,required: true}     
-})
+});
 
 export const Marker = model("Marker",MarkerSchema)

@@ -27,3 +27,21 @@ export async function getMarker(id:string) {
 export async function createMarker(markerRessource: markerRessource) {
     await Marker.create(markerRessource);
 }
+
+
+export async function getAllMarkers() {
+    const markers = await Marker.find({}).exec();
+    const markerRes: markerRessource[] = [];
+    for (const x of markers){
+        const marker = {
+            id: x._id.toString(),
+            latitude: x.latitude,
+            longitude: x.longitude,
+            name: x.name,
+            description: x.description,
+            label: x.label
+        };
+        markerRes.push(marker);
+    }
+    return markerRes;
+}

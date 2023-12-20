@@ -12,13 +12,32 @@ POST http://localhost:3000/marker/
 Content-Type: application/json
 
 {
-    "latitude": "40.992545271822074",
-    "longitude":"29.0289932026238",
-    "name":"Komagene",
-    "description": "Cig Köfte wuhu ",
-    "label": "vegetarian"
+    "latitude": "40.98531155176955",
+    "longitude":"29.023263695093327",
+    "name":"Turp",
+    "description": "Burrito lecker lecker",
+    "label": "vegan"
 }
 
 ###
 
 GET http://localhost:3000/markers/
+
+###
+
+POST http://localhost:3000/review/
+Content-Type: application/json
+
+{
+    "title": "super tasty",
+    "markerId": "6580152fdbbdf14aadfd3740",
+    "description": "super super tasty"
+}
+
+###
+
+GET http://localhost:3000/review/6582bd93c06495894f99ec4c
+
+###
+
+GET http://localhost:3000/reviews/6580152fdbbdf14aadfd3740
