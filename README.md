@@ -1,8 +1,8 @@
 # CSE_Project_Backend
 
-CSE_Project
+### CSE_Project
 This Project was made for a Mobile Device Programming Class.
-We build an app, that is already in the App Store and is called HappyCow. You can search vegetarian or vegan restaurants based on a map.
+We developed an app that allows you to search for vegetarian and vegan restaurants using a map.
 
 TypeScrip source code is in ./src
 JavaScript source code us in ./dist
